@@ -1,0 +1,17 @@
+#container{
+    text-align: center; 
+    background-color: rgb(233, 145, 214);
+    margin-top: 15%;
+    margin-left: 40%;
+    margin-right: 40%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+#btn{
+    background-color: aqua;
+     color: black;
+     padding-top: 10px;
+     padding-bottom: 10px;
+     border-radius: 15px;
+     
+}

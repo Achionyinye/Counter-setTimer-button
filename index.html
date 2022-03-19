@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="container">
+        <h1 id="count"></h1>
+        <button id="btn"> Click Me </button>
+    </div>
+</body>
+<script>
+    let button = document.querySelector("#btn");
+    let count = document.querySelector("#count");
+
+    var counter = 0;
+
+    count.textContent = counter;
+
+    let timer = setTimeout(() => {
+        count.textContent = 0
+    }, 5000)
+
+    button.addEventListener("click", handleIncrement)
+
+    function handleIncrement() {
+        counter++;
+        count.textContent = Number(count.textContent) + 1;
+        clearTimeout(timer)
+        timer = setTimeout(() => {
+            count.textContent = 0
+        }, 5000)
+    };
+</script>
+
+</html>
